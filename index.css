@@ -1,0 +1,186 @@
+/* Importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+/* Primary whole html page CSS ing  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/*  Assingning mostly used  colors and text sizes in oder to easyfy later uses  */
+:root {
+    --bg-color: #bbd417;
+    --main-color: #1f76cd;
+    --2nd-main-color: #ffffffcc;
+    --text-color: #fff;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+
+}
+
+html {
+    /* background-image: url(women-with-books-in-library-dp.jpeg); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFFDFA;
+}
+
+/*  Header styling  */
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 20px 1%;
+    transition: .3s;
+}
+/* Logo styling */
+.logo {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 40px;
+
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    margin: 0 80px;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+/* Language bar modifications */
+#google_translate_element {
+    margin-top: 16px;
+
+}
+
+.goog-logo-link {
+    padding: 0 !important;
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-combo {
+    margin-left: 11rem !important;
+    margin-right: 0 !important;
+    padding: .2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: 'Maven Pro', sans-serif !important;
+    border-radius: 10px;
+}
+
+/* Home page section styling */
+section {
+    padding: 120pxm 14%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+
+}
+
+/* search bar styling */
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    border-color: var(--bg-color);
+    margin: 7rem 19rem 0;
+    padding: 1rem;
+}
+
+.search-title {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#search {
+    border-color:black;
+    padding: .5rem;
+    border-radius: 1.1rem;
+    background: var(--text-color);
+}
+
+#search:hover {
+    border-color: var(--bg-color);
+}
+
+/* Styling books container */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(7, 168px);
+    grid-auto-rows: 21rem;
+    grid-gap: 1rem;
+    margin: auto;
+}
+
+.book-wrapper {
+     background-color:rgba(197, 227, 195, 0.324);
+     display: grid;
+}
+
+img {
+    width: 168px;
+    height: 252px;
+    background-size: cover;
+}
+
+.book-wrapper h4{
+    font-size: medium;
+    color: var(--main-color);
+    margin-top: 3px;
+}
+.book-wrapper h4:hover{
+    color:var(--bg-color);
+}
+.book-wrapper h5{
+    color: black;
+    margin-top: 3px;
+}
+
+.book-wrapper p{
+    color: blacku;   
+    margin-top: 4px;
+    font-size: .9rem;
+    font-weight:600;
+}
+
+#google_translate_element img{
+    display: none;
+}
